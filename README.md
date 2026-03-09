@@ -7,6 +7,10 @@ Asynchronous effects library for WS2812-compatible NeoPixel on Pi Pico - MicroPy
 This module implements a small framework for building and applying colour `Pattern`s and time-based `FX` (effects) to WS2812-compatible NeoPixel LED strips on the Raspberry Pi Pico 2 (MicroPython). Operation is asynchronous, so effects
 can be kept running in background.  Patterns supported are Fill, Random, Spectrum, User and Pulse, the last being used for "pulses" superimposed on a background (think light-sabre).  Effects supported are Null (timer), Rotate, Fade, Sparkle, Flicker, Wipe, Push and Pulse.  It includes fast assembly implementations for copy when running on Pico 1 or 2, and fade when running on Pico 2 (RP2350) only, but can be easily modified to run on Pico 1 if wanted.
 
+## Video
+
+https://www.dhparki.com/video/NeoPixelFX.mp4
+
 ### Installing
 
 For how to connect a NeoPixel strip or ring to Pi Pico 2, see the manufacturers instructions.  Note that longer strips (over about 24 LEDs) will probably require an exernal power supply as they can take quite a bit of current (typically up to 50mA peak, 20mA typical per LED - but again, see the manufacturer's data-sheet).
@@ -15,7 +19,7 @@ To use the library, you need to install neopixel_fx.py on your Pico - e.g. using
 
 ### Executing program
 
-The neopixel_fx.py contains a demo which you can run on the Pico from an editor such as Thonny or Visual Studio Code.  The demo assumes a 60 pixel GBR NeoPixel with its data line connected to GPIO 21 on the Pico, but you can edit the code to change this.  Press 1-8 to show various patterns and effects, 9 to run a continuous demo in a loop, c to clear the strip or q to quit.
+The file neopixel_fx.py contains a demo which you can run on the Pico from an editor such as Thonny or Visual Studio Code.  The demo assumes a 60 pixel GBR NeoPixel with its data line connected to GPIO 21 on the Pico, but you can edit the code to change this.  Press 1-8 to show various patterns and effects, 9 to run a continuous demo in a loop, c to clear the strip or q to quit.
 
 ### Limitations
 
